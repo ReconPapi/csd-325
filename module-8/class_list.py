@@ -8,7 +8,7 @@ def print_students(student_list):
 
 # Load JSON file
 
-with open('Student.json', 'r') as file:
+with open('C:\csd\csd-325\module-8\Student.json', 'r+') as file:
     students = json.load(file)
 
 print("\nOriginal Student List:")
@@ -28,7 +28,7 @@ print("\nUpdated Student List:")
 print_students(students)
 
 # Print .json file was updated
-with open("Student.json", "w") as file:
-    json.dump(students, file, indent=4)
+with open('C:\csd\csd-325\module-8\Student.json', 'w') as file:
+        json.dump(students, file, indent=4)
 
 print("\nJSON file updated.")
